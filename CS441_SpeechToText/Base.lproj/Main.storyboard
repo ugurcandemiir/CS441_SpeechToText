@@ -123,9 +123,9 @@
                                             <action selector="buttonTappedAction:" destination="yyT-AW-X5K" eventType="touchUpInside" id="N9a-Kl-rCA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s6-g9-RTI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s6-g9-RTI">
                                         <rect key="frame" x="212.5" y="0.0" width="160.5" height="40"/>
-                                        <state key="normal" title="Speech"/>
+                                        <state key="normal" image="speaker.wave.2.fill" catalog="system"/>
                                         <connections>
                                             <action selector="buttonTappedAction:" destination="yyT-AW-X5K" eventType="touchUpInside" id="efc-t1-pln"/>
                                         </connections>
@@ -162,6 +162,7 @@
     </scenes>
     <resources>
         <image name="mic" catalog="system" width="108" height="128"/>
+        <image name="speaker.wave.2.fill" catalog="system" width="128" height="90"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
