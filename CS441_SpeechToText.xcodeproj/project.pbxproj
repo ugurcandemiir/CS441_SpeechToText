@@ -3,18 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5A935D212608ECBD00E17571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D202608ECBD00E17571 /* AppDelegate.swift */; };
 		5A935D232608ECBD00E17571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D222608ECBD00E17571 /* SceneDelegate.swift */; };
-		5A935D252608ECBD00E17571 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D242608ECBD00E17571 /* ViewController.swift */; };
 		5A935D282608ECBD00E17571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A935D262608ECBD00E17571 /* Main.storyboard */; };
 		5A935D2A2608ECBF00E17571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A935D292608ECBF00E17571 /* Assets.xcassets */; };
 		5A935D2D2608ECBF00E17571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A935D2B2608ECBF00E17571 /* LaunchScreen.storyboard */; };
 		5A935D382608ECBF00E17571 /* CS441_SpeechToTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D372608ECBF00E17571 /* CS441_SpeechToTextTests.swift */; };
 		5A935D432608ECBF00E17571 /* CS441_SpeechToTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D422608ECBF00E17571 /* CS441_SpeechToTextUITests.swift */; };
+		5A935D692609037F00E17571 /* SpeechToTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D682609037F00E17571 /* SpeechToTextViewController.swift */; };
+		5A935D71260907DC00E17571 /* TextToSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D70260907DC00E17571 /* TextToSpeechViewController.swift */; };
 		633276C0EB19793B4361DA1A /* Pods_CS441_SpeechToText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41169F5CB8DD396A03AA8D80 /* Pods_CS441_SpeechToText.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +42,6 @@
 		5A935D1D2608ECBD00E17571 /* CS441_SpeechToText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CS441_SpeechToText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A935D202608ECBD00E17571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A935D222608ECBD00E17571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A935D242608ECBD00E17571 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A935D272608ECBD00E17571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A935D292608ECBF00E17571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A935D2C2608ECBF00E17571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +52,8 @@
 		5A935D3E2608ECBF00E17571 /* CS441_SpeechToTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CS441_SpeechToTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A935D422608ECBF00E17571 /* CS441_SpeechToTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS441_SpeechToTextUITests.swift; sourceTree = "<group>"; };
 		5A935D442608ECBF00E17571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A935D682609037F00E17571 /* SpeechToTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextViewController.swift; sourceTree = "<group>"; };
+		5A935D70260907DC00E17571 /* TextToSpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechViewController.swift; sourceTree = "<group>"; };
 		735CCB4D333DAA15797353CC /* Pods-CS441_SpeechToText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS441_SpeechToText.debug.xcconfig"; path = "Target Support Files/Pods-CS441_SpeechToText/Pods-CS441_SpeechToText.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,11 +110,12 @@
 			children = (
 				5A935D202608ECBD00E17571 /* AppDelegate.swift */,
 				5A935D222608ECBD00E17571 /* SceneDelegate.swift */,
-				5A935D242608ECBD00E17571 /* ViewController.swift */,
 				5A935D262608ECBD00E17571 /* Main.storyboard */,
 				5A935D292608ECBF00E17571 /* Assets.xcassets */,
 				5A935D2B2608ECBF00E17571 /* LaunchScreen.storyboard */,
 				5A935D2E2608ECBF00E17571 /* Info.plist */,
+				5A935D682609037F00E17571 /* SpeechToTextViewController.swift */,
+				5A935D70260907DC00E17571 /* TextToSpeechViewController.swift */,
 			);
 			path = CS441_SpeechToText;
 			sourceTree = "<group>";
@@ -149,7 +152,6 @@
 				735CCB4D333DAA15797353CC /* Pods-CS441_SpeechToText.debug.xcconfig */,
 				17507132772E99FE89D37E17 /* Pods-CS441_SpeechToText.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -327,7 +329,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A935D252608ECBD00E17571 /* ViewController.swift in Sources */,
+				5A935D71260907DC00E17571 /* TextToSpeechViewController.swift in Sources */,
+				5A935D692609037F00E17571 /* SpeechToTextViewController.swift in Sources */,
 				5A935D212608ECBD00E17571 /* AppDelegate.swift in Sources */,
 				5A935D232608ECBD00E17571 /* SceneDelegate.swift in Sources */,
 			);

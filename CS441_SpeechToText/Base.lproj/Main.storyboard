@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mew-Dn-FnG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Speech To Text-->
+        <scene sceneID="x6R-ja-P2M">
+            <objects>
+                <navigationController id="GEG-k2-P8Z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Speech To Text" id="Bmm-Pq-Aki"/>
+                    <navigationItem key="navigationItem" id="r7r-lI-Bq1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gfi-ap-Eby">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nrD-V5-6Ld"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBk-7D-wwH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-741" y="-203"/>
+        </scene>
+        <!--Text To Speech-->
+        <scene sceneID="5q6-Db-zfn">
+            <objects>
+                <navigationController id="KZ1-8t-eqr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Text To Speech" id="bPM-YA-hxd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fhG-ya-LsV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yyT-AW-X5K" kind="relationship" relationship="rootViewController" id="7zV-Fa-n9g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5J-rJ-toe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="-204"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="CPh-01-v6S">
+            <objects>
+                <tabBarController id="mew-Dn-FnG" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d0M-A5-Btd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GEG-k2-P8Z" kind="relationship" relationship="viewControllers" id="jOg-DM-bs3"/>
+                        <segue destination="KZ1-8t-eqr" kind="relationship" relationship="viewControllers" id="xWg-pC-8U3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPr-7H-A5D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303" y="-970"/>
+        </scene>
+        <!--Speech To Text-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CS441_SpeechToText" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="SpeechToTextViewController" customModule="CS441_SpeechToText" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rE-Mb-32v">
-                                <rect key="frame" x="20" y="144" width="374" height="22"/>
-                                <state key="normal" title="Button" image="mic" catalog="system"/>
+                                <rect key="frame" x="20" y="188" width="374" height="25"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="mic" catalog="system" symbolScale="large"/>
+                                </state>
                                 <connections>
                                     <action selector="pushTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALp-b7-Atw"/>
                                 </connections>
@@ -32,17 +88,83 @@
                             <constraint firstItem="7rE-Mb-32v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ujj-ZA-3e6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Speech To Text" id="N5B-ys-oIx"/>
                     <connections>
-                        <outlet property="pushTalkButton" destination="7rE-Mb-32v" id="67u-lq-5EL"/>
+                        <outlet property="TalkButton" destination="7rE-Mb-32v" id="NDQ-hJ-TdD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="94"/>
+            <point key="canvasLocation" x="-742" y="552"/>
+        </scene>
+        <!--Text To Speech -->
+        <scene sceneID="Kom-kh-GdE">
+            <objects>
+                <viewController id="yyT-AW-X5K" customClass="TextToSpeechViewController" customModule="CS441_SpeechToText" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8oV-sW-Pyj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="djW-MA-7gg">
+                                <rect key="frame" x="20.5" y="117" width="373" height="107.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="6nz-cH-kbM">
+                                <rect key="frame" x="20.5" y="269.5" width="373" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pY7-V1-q1D">
+                                        <rect key="frame" x="0.0" y="0.0" width="160.5" height="40"/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="buttonTappedAction:" destination="yyT-AW-X5K" eventType="touchUpInside" id="N9a-Kl-rCA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s6-g9-RTI">
+                                        <rect key="frame" x="212.5" y="0.0" width="160.5" height="40"/>
+                                        <state key="normal" title="Speech"/>
+                                        <connections>
+                                            <action selector="buttonTappedAction:" destination="yyT-AW-X5K" eventType="touchUpInside" id="efc-t1-pln"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YMa-4U-flH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e0V-kz-Iau"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="djW-MA-7gg" firstAttribute="height" secondItem="8oV-sW-Pyj" secondAttribute="height" multiplier="0.12" id="DIB-fT-t5j"/>
+                            <constraint firstItem="djW-MA-7gg" firstAttribute="width" secondItem="8oV-sW-Pyj" secondAttribute="width" multiplier="0.9" id="Lkx-Z8-RmZ"/>
+                            <constraint firstItem="6nz-cH-kbM" firstAttribute="width" secondItem="djW-MA-7gg" secondAttribute="width" id="ZNn-xI-ddI"/>
+                            <constraint firstItem="6nz-cH-kbM" firstAttribute="top" secondItem="djW-MA-7gg" secondAttribute="bottom" multiplier="1.2" id="Zig-e9-z87"/>
+                            <constraint firstItem="6nz-cH-kbM" firstAttribute="centerX" secondItem="djW-MA-7gg" secondAttribute="centerX" id="am8-Od-BRt"/>
+                            <constraint firstItem="djW-MA-7gg" firstAttribute="top" secondItem="e0V-kz-Iau" secondAttribute="top" constant="29" id="i5x-cn-Kw2"/>
+                            <constraint firstItem="djW-MA-7gg" firstAttribute="centerX" secondItem="e0V-kz-Iau" secondAttribute="centerX" id="pge-qc-T1F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Text To Speech " id="KR3-sW-za4"/>
+                    <connections>
+                        <outlet property="clearButton" destination="pY7-V1-q1D" id="ilZ-OC-xAB"/>
+                        <outlet property="speechButton" destination="0s6-g9-RTI" id="XtL-Tc-S3F"/>
+                        <outlet property="textView" destination="djW-MA-7gg" id="aRj-SI-VQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DoD-yV-OP0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="551.11607142857144"/>
         </scene>
     </scenes>
     <resources>
         <image name="mic" catalog="system" width="108" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
