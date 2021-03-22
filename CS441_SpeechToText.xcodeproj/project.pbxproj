@@ -16,6 +16,7 @@
 		5A935D432608ECBF00E17571 /* CS441_SpeechToTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D422608ECBF00E17571 /* CS441_SpeechToTextUITests.swift */; };
 		5A935D692609037F00E17571 /* SpeechToTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D682609037F00E17571 /* SpeechToTextViewController.swift */; };
 		5A935D71260907DC00E17571 /* TextToSpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D70260907DC00E17571 /* TextToSpeechViewController.swift */; };
+		5A935D7726090D5500E17571 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D7626090D5500E17571 /* SpeechService.swift */; };
 		633276C0EB19793B4361DA1A /* Pods_CS441_SpeechToText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41169F5CB8DD396A03AA8D80 /* Pods_CS441_SpeechToText.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		5A935D442608ECBF00E17571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A935D682609037F00E17571 /* SpeechToTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextViewController.swift; sourceTree = "<group>"; };
 		5A935D70260907DC00E17571 /* TextToSpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechViewController.swift; sourceTree = "<group>"; };
+		5A935D7626090D5500E17571 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		735CCB4D333DAA15797353CC /* Pods-CS441_SpeechToText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS441_SpeechToText.debug.xcconfig"; path = "Target Support Files/Pods-CS441_SpeechToText/Pods-CS441_SpeechToText.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				5A935D2E2608ECBF00E17571 /* Info.plist */,
 				5A935D682609037F00E17571 /* SpeechToTextViewController.swift */,
 				5A935D70260907DC00E17571 /* TextToSpeechViewController.swift */,
+				5A935D7526090D3600E17571 /* Speech Service */,
 			);
 			path = CS441_SpeechToText;
 			sourceTree = "<group>";
@@ -136,6 +139,14 @@
 				5A935D442608ECBF00E17571 /* Info.plist */,
 			);
 			path = CS441_SpeechToTextUITests;
+			sourceTree = "<group>";
+		};
+		5A935D7526090D3600E17571 /* Speech Service */ = {
+			isa = PBXGroup;
+			children = (
+				5A935D7626090D5500E17571 /* SpeechService.swift */,
+			);
+			path = "Speech Service";
 			sourceTree = "<group>";
 		};
 		779BDE3FE6D83BAB795A4535 /* Frameworks */ = {
@@ -331,6 +342,7 @@
 			files = (
 				5A935D71260907DC00E17571 /* TextToSpeechViewController.swift in Sources */,
 				5A935D692609037F00E17571 /* SpeechToTextViewController.swift in Sources */,
+				5A935D7726090D5500E17571 /* SpeechService.swift in Sources */,
 				5A935D212608ECBD00E17571 /* AppDelegate.swift in Sources */,
 				5A935D232608ECBD00E17571 /* SceneDelegate.swift in Sources */,
 			);

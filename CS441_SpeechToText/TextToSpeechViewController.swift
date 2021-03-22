@@ -14,15 +14,26 @@ class TextToSpeechViewController: UIViewController {
     @IBOutlet weak var speechButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUIViews()
     }
     
-    @IBAction func buttonTappedAction(_ sender: Any) {
+    func setupUIViews(){
+        textView.text = ""
+        
+        textView.layer.cornerRadius = 2
+        textView.layer.borderWidth = 2
+        textView.layer.borderColor = UIColor.black.cgColor
+        
+    }
+    
+    
+    @IBAction func buttonTappedAction(_ sender: UIButton) {
         if sender == clearButton{
-            
+            textView.text = ""
+            textView.becomeFirstResponder()
         }else if sender == speechButton{
-            
+            textView.resignFirstResponder()
+            SpeechService.shared.startSpeech(textView.text)
         }
     }
     
