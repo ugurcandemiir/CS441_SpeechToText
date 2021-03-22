@@ -15,6 +15,7 @@
 		5A935D2D2608ECBF00E17571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A935D2B2608ECBF00E17571 /* LaunchScreen.storyboard */; };
 		5A935D382608ECBF00E17571 /* CS441_SpeechToTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D372608ECBF00E17571 /* CS441_SpeechToTextTests.swift */; };
 		5A935D432608ECBF00E17571 /* CS441_SpeechToTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A935D422608ECBF00E17571 /* CS441_SpeechToTextUITests.swift */; };
+		633276C0EB19793B4361DA1A /* Pods_CS441_SpeechToText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41169F5CB8DD396A03AA8D80 /* Pods_CS441_SpeechToText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17507132772E99FE89D37E17 /* Pods-CS441_SpeechToText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS441_SpeechToText.release.xcconfig"; path = "Target Support Files/Pods-CS441_SpeechToText/Pods-CS441_SpeechToText.release.xcconfig"; sourceTree = "<group>"; };
+		41169F5CB8DD396A03AA8D80 /* Pods_CS441_SpeechToText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS441_SpeechToText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A935D1D2608ECBD00E17571 /* CS441_SpeechToText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CS441_SpeechToText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A935D202608ECBD00E17571 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A935D222608ECBD00E17571 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		5A935D3E2608ECBF00E17571 /* CS441_SpeechToTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CS441_SpeechToTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A935D422608ECBF00E17571 /* CS441_SpeechToTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS441_SpeechToTextUITests.swift; sourceTree = "<group>"; };
 		5A935D442608ECBF00E17571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		735CCB4D333DAA15797353CC /* Pods-CS441_SpeechToText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS441_SpeechToText.debug.xcconfig"; path = "Target Support Files/Pods-CS441_SpeechToText/Pods-CS441_SpeechToText.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633276C0EB19793B4361DA1A /* Pods_CS441_SpeechToText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				5A935D362608ECBF00E17571 /* CS441_SpeechToTextTests */,
 				5A935D412608ECBF00E17571 /* CS441_SpeechToTextUITests */,
 				5A935D1E2608ECBD00E17571 /* Products */,
+				7DDFBC62CFAAE61453528C4B /* Pods */,
+				779BDE3FE6D83BAB795A4535 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,24 @@
 			path = CS441_SpeechToTextUITests;
 			sourceTree = "<group>";
 		};
+		779BDE3FE6D83BAB795A4535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41169F5CB8DD396A03AA8D80 /* Pods_CS441_SpeechToText.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DDFBC62CFAAE61453528C4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				735CCB4D333DAA15797353CC /* Pods-CS441_SpeechToText.debug.xcconfig */,
+				17507132772E99FE89D37E17 /* Pods-CS441_SpeechToText.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A935D472608ECBF00E17571 /* Build configuration list for PBXNativeTarget "CS441_SpeechToText" */;
 			buildPhases = (
+				7E39D8F9D935340F75C82587 /* [CP] Check Pods Manifest.lock */,
 				5A935D192608ECBD00E17571 /* Sources */,
 				5A935D1A2608ECBD00E17571 /* Frameworks */,
 				5A935D1B2608ECBD00E17571 /* Resources */,
+				62EA329A4C30DAA85E63A337 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62EA329A4C30DAA85E63A337 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CS441_SpeechToText/Pods-CS441_SpeechToText-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CS441_SpeechToText/Pods-CS441_SpeechToText-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CS441_SpeechToText/Pods-CS441_SpeechToText-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E39D8F9D935340F75C82587 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CS441_SpeechToText-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A935D192608ECBD00E17571 /* Sources */ = {
@@ -433,6 +502,7 @@
 		};
 		5A935D482608ECBF00E17571 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 735CCB4D333DAA15797353CC /* Pods-CS441_SpeechToText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +522,7 @@
 		};
 		5A935D492608ECBF00E17571 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17507132772E99FE89D37E17 /* Pods-CS441_SpeechToText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
